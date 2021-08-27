@@ -9,9 +9,9 @@ import os, sys, inspect
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
-from Library.utils import elf
-from Library.sahara import convertmsmid
-from Config.qualcomm_config import vendor
+from edl.Library.utils import elf
+from edl.Library.sahara import convertmsmid
+from edl.Config.qualcomm_config import vendor
 
 class MBN:
     def __init__(self, memory):
