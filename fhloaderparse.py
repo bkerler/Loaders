@@ -273,7 +273,7 @@ def main(argv):
                 continue
             hdr = unpack("<I", mem_section[0:4])[0]
 
-            if hdr == 0x464C457F:
+            if hdr&0xFFFFFF == 0x4C457F:
                 elfheader = elf(mem_section, signinfo.filename)
                 if 'memorylayout' in dir(elfheader):
                     memsection = elfheader.memorylayout[1]
