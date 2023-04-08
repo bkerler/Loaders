@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.i64
+*.idb
 
 # C extensions
 *.so
